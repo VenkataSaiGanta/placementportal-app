@@ -3,7 +3,7 @@ import Quill from 'quill'
 import { JobCategories, JobLocations } from '../assets/assets';
 
 const AddJob=()=>{
-    const [title,setTitle]=useState('');
+    const [title, setTitle]=useState('');
     const [location, setLocation] = useState('Bangalore');
     const [category, setCategory] = useState('Programming');
     const [level, setLevel] = useState('Beginner level');
@@ -22,8 +22,8 @@ const AddJob=()=>{
     }, [])
 
     return (
-        <form>
-        <div>
+        <form className='container p-4 flex flex-col w-full items-start gap-3 '>
+        <div className='w-full'>
             <p className='mb-2'>Job Title</p>
                 <input type="text" placeholder='Type here'
                     onChange={e => setTitle(e.target.value)} value={title}
@@ -58,7 +58,7 @@ const AddJob=()=>{
                 </div>
                  <div>
                     <p className='mb-2'>Job Level</p>
-                    <select className='w-full px-3 py-2 border-2 border-gray-300 rounded' onChange={e => setLevel(e.target.value)}>
+                    <select className='w-full px-3 py-2 border-2 border-gray-300 rounded sm:w-[120px]' onChange={e => setLevel(e.target.value)}>
                         <option value="Beginner level">Beginner level</option>
                         <option value="Intermediate level">Intermediate level</option>
                         <option value="Senior level">Senior level</option>
