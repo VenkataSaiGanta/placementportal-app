@@ -16,7 +16,7 @@ const onSubmitHandler = async (e) => {
         e.preventDefault()
 
         if (state == "Sign Up" && !isTextDataSubmited) {
-            return setIsTextDataSubmited(true)
+              setIsTextDataSubmited(true)
         }}
 
          useEffect(() => {
@@ -51,9 +51,9 @@ const onSubmitHandler = async (e) => {
             </div>)}
             
              <div className='border px-4 py-2 flex items-center gap-2 rounded-full mt-5'>
-                <img src={assets.email_icon_icon} alt="" />
+                <img src={assets.email_icon} alt="" />
                 <input className='outline-none text-sm' onChange ={e=> setEmail(e.target.value)} value={email} type='email' placeholder='Email Id' required/>
-            </div>
+            </div>  
              <div className='border px-4 py-2 flex items-center gap-2 rounded-full mt-5'>
                 <img src={assets.lock_icon} alt="" />
                 <input className='outline-none text-sm' onChange ={e=> setPassword(e.target.value)} value={password} type='password' placeholder='Password' required/>
