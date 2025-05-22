@@ -9,7 +9,7 @@ const ManageJobs=()=>{
 
     const navigate=useNavigate()
     return (
-        <div>
+        
              <div className='container p-4 max-w-5xl'>
       <div className='overflow-x-auto'>
         <table className='min-w-full bg-white border border-gray-200 max-sm:text-sm'>
@@ -44,7 +44,7 @@ const ManageJobs=()=>{
       </div>
     </div>
 
-        </div>
+        
     )
 }
 
