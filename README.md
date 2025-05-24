@@ -61,7 +61,7 @@ InsiderJobs is a full-stack job listing and application platform built using the
 
 ## Folder Structure
 ```
-InsiderJobs/
+placementportal-app/
 ├── client/ (Frontend - React)
 ├── server/ (Backend - Express, MongoDB)
 ├── README.md
