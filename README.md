@@ -38,7 +38,7 @@ InsiderJobs is a full-stack job listing and application platform built using the
    ```
 2. Navigate to the project directory:
    ```bash
-   cd InsiderJobs
+   cd placementportal-app
    ```
 3. Install dependencies for both client and server:
    ```bash
