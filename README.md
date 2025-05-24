@@ -34,7 +34,7 @@ InsiderJobs is a full-stack job listing and application platform built using the
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/VenkataSaiGanta/InsiderJobs.git
+   git clone https://github.com/VenkataSaiGanta/placementportal-app.git
    ```
 2. Navigate to the project directory:
    ```bash
