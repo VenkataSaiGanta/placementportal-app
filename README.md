@@ -1,9 +1,9 @@
-# InsiderJobs
+# PLACEMENTPORTAL-APP
 
 InsiderJobs is a full-stack job listing and application platform built using the MERN stack. It allows users to browse job postings, apply for jobs, and manage applications efficiently.
 
 ## Live Demo
-[Click here to view InsiderJobs](https://insider-jobs-full-stack-client.vercel.app/)
+[Click here to view placementportal-app](https://insider-jobs-full-stack-client.vercel.app/)
 
 ## Features
 - **User Authentication**: Secure login and signup using JWT authentication.
