@@ -1,10 +1,11 @@
-import User from "../models/User.js"
-import JobApplication from "../models/JobApplication.js"
-import { v2 as cloudinary } from "cloudinary"
 import Job from "../models/Job.js"
+import JobApplication from "../models/JobApplication.js"
+import User from "../models/User.js"
+import { v2 as cloudinary } from "cloudinary"
 
-
+// Get User Data
 export const getUserData = async (req, res) => {
+
     const userId = req.auth.userId
 
     try {
@@ -20,11 +21,14 @@ export const getUserData = async (req, res) => {
     } catch (error) {
         res.json({ success: false, message: error.message })
     }
+
 }
 
 
+// Apply For Job
 export const applyForJob = async (req, res) => {
- const { jobId } = req.body
+
+    const { jobId } = req.body
 
     const userId = req.auth.userId
 
@@ -55,25 +59,25 @@ export const applyForJob = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 
-
-
 }
 
+// Get User Applied Applications Data
 export const getUserJobApplications = async (req, res) => {
- try {
+
+    try {
 
         const userId = req.auth.userId
 
-        const application = await JobApplication.find({ userId })
+        const applications = await JobApplication.find({ userId })
             .populate('companyId', 'name email image')
             .populate('jobId', 'title description location category level salary')
             .exec()
 
-        if (!application ) {
+        if (!applications) {
             return res.json({ success: false, message: 'No job applications found for this user.' })
         }
 
-        return res.json({ success: true, application })
+        return res.json({ success: true, applications })
 
     } catch (error) {
         res.json({ success: false, message: error.message })
@@ -81,8 +85,9 @@ export const getUserJobApplications = async (req, res) => {
 
 }
 
+// Update User Resume
 export const updateUserResume = async (req, res) => {
-try {
+    try {
 
         const userId = req.auth.userId
 
@@ -103,7 +108,5 @@ try {
 
         res.json({ success: false, message: error.message })
 
-    } 
-
+    }
 }
-

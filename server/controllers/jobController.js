@@ -1,7 +1,10 @@
 import Job from "../models/Job.js"
-export const getJobs = async (req, res) => {
 
-try {
+
+
+// Get All Jobs
+export const getJobs = async (req, res) => {
+    try {
 
         const jobs = await Job.find({ visible: true })
             .populate({ path: 'companyId', select: '-password' })
@@ -13,9 +16,9 @@ try {
     }
 }
 
-
+// Get Single Job Using JobID
 export const getJobById = async (req, res) => {
-     try {
+    try {
 
         const { id } = req.params
 
@@ -40,6 +43,4 @@ export const getJobById = async (req, res) => {
     } catch (error) {
         res.json({ success: false, message: error.message })
     }
-
-
 }

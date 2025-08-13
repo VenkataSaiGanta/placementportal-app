@@ -1,9 +1,9 @@
-# PLACEMENTPORTAL-APP
+# InsiderJobs
 
-placementportal-app is a full-stack job listing and application platform built using the MERN stack. It allows users to browse job postings, apply for jobs, and manage applications efficiently.
+InsiderJobs is a full-stack job listing and application platform built using the MERN stack. It allows users to browse job postings, apply for jobs, and manage applications efficiently.
 
 ## Live Demo
-[Click here to view placementportal-app](https://insider-jobs-full-stack-client.vercel.app/)
+[Click here to view InsiderJobs](https://insider-jobs-full-stack-client.vercel.app/)
 
 ## Features
 - **User Authentication**: Secure login and signup using JWT authentication.
@@ -34,11 +34,11 @@ placementportal-app is a full-stack job listing and application platform built u
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/VenkataSaiGanta/placementportal-app.git
+   git clone https://github.com/tejas249/InsiderJobs.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd placementportal-app
+   cd InsiderJobs
    ```
 3. Install dependencies for both client and server:
    ```bash
@@ -61,9 +61,18 @@ placementportal-app is a full-stack job listing and application platform built u
 
 ## Folder Structure
 ```
-placementportal-app/
+InsiderJobs/
 ├── client/ (Frontend - React)
 ├── server/ (Backend - Express, MongoDB)
 ├── README.md
 ```
+
+## Contributing
+Feel free to fork the repository and submit pull requests for improvements.
+
+## Contact
+For any issues or feature requests, reach out to [Tejas Kamble](https://linkedin.com/in/tejas249).
+
+---
+Made with ❤️ by Tejas Kamble
 
